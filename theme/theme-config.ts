@@ -36,3 +36,12 @@ export const antThemeConfig: ThemeConfig = {
     },
   },
 }
+
+export const customTheme = {
+  fs: {
+    xsm: "12px",
+    sm: "14px",
+    md: "16px",
+    "2md": "20px",
+  },
+}
