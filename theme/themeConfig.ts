@@ -9,6 +9,7 @@ export const themeConfig: ThemeConfig["token"] = {
 export const customTheme = {
   "gray-1": "#f4f5fc",
   "gray-2": "#dce1ef",
+  "gray-3": "#F6F5FB",
   "bg-main": "#F4F5FC",
   fs: {
     xsm: "12px",
@@ -49,13 +50,11 @@ export const antThemeConfig: ThemeConfig = {
       headerSplitColor: customTheme["gray-2"],
       headerBg: customTheme["gray-2"],
       headerColor: colorScheme?.["blue-10"],
+      colorText: colorScheme?.["blue-10"],
       fontSize: 14,
       fontWeightStrong: 700,
       cellFontSize: 14,
-      footerBg: "#fff",
-      stickyScrollBarBg: "#babac0",
       stickyScrollBarBorderRadius: 80,
-      rowHoverBg: "#F4F5FC",
       headerBorderRadius: 6,
     },
 

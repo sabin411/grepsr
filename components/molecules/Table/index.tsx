@@ -1,11 +1,22 @@
 "use client"
 
 import React from "react"
-import { Table as AntTable, TableProps } from "antd"
-import styled from "styled-components"
+import { TableProps } from "antd"
+import { StyledTable } from "./styles"
 
-const StyledTable = styled(AntTable)``
-
-export const Table = (props: TableProps) => {
-  return <StyledTable {...props} />
+type GenericTableDataType = {
+  id: string | number
+  key: string | number
+}
+export function Table<TData extends GenericTableDataType>({
+  ...props
+}: TableProps<TData>) {
+  return (
+    <StyledTable
+      rowClassName={(_, index) =>
+        index % 2 === 0 ? "table-row-white" : "table-row-gray"
+      }
+      {...props}
+    />
+  )
 }
