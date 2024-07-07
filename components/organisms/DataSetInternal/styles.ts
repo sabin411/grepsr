@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const StyledDataSetPage = styled.div`
   .edit-mode-label {
@@ -8,4 +8,4 @@ export const StyledDataSetPage = styled.div`
   .dataset-top-controller {
     margin-bottom: 16px;
   }
-`
+`;

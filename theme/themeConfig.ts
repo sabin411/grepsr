@@ -1,10 +1,10 @@
-import { ThemeConfig } from "antd"
-import { colorScheme } from "./colorScheme"
+import { ThemeConfig } from "antd";
+import { colorScheme } from "./colorScheme";
 
 export const themeConfig: ThemeConfig["token"] = {
   borderRadius: 4,
   fontFamily: "'Noto Sans JP', sans-serif",
-}
+};
 
 export const customTheme = {
   "gray-1": "#f4f5fc",
@@ -17,7 +17,7 @@ export const customTheme = {
     md: "16px",
     "2md": "20px",
   },
-}
+};
 
 export const antThemeConfig: ThemeConfig = {
   token: {
@@ -66,4 +66,4 @@ export const antThemeConfig: ThemeConfig = {
       trackHeight: 22,
     },
   },
-}
+};

@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const FilterIcon = () => (
   <svg
@@ -12,6 +12,6 @@ const FilterIcon = () => (
     <path d="M3 5H11" stroke="currentColor" strokeLinecap="round" />
     <path d="M5 9H9" stroke="currentColor" strokeLinecap="round" />
   </svg>
-)
+);
 
-export default FilterIcon
+export default FilterIcon;

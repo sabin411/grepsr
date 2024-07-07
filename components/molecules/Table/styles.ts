@@ -1,5 +1,5 @@
-import styled from "styled-components"
-import { Table as AntTable } from "antd"
+import styled from "styled-components";
+import { Table as AntTable } from "antd";
 
 export const StyledTable = styled(AntTable)`
   table {
@@ -28,4 +28,4 @@ export const StyledTable = styled(AntTable)`
       }
     }
   }
-`
+`;

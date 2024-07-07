@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 export default function Dataset() {
   return (
@@ -7,5 +7,5 @@ export default function Dataset() {
       <br />
       <Link href={"/dataset/amazon"}> Amazon product price </Link>
     </div>
-  )
+  );
 }

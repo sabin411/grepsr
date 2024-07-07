@@ -1,2 +1,2 @@
-export * from "./datasetMock"
-export * from "./navMenuItem"
+export * from "./datasetMock";
+export * from "./navMenuItem";

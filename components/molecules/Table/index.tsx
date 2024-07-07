@@ -1,15 +1,15 @@
-"use client"
+"use client";
 
-import React from "react"
+import React from "react";
 
 // packages
-import { TableProps } from "antd"
+import { TableProps } from "antd";
 
 // components
-import { StyledTable } from "./styles"
+import { StyledTable } from "./styles";
 
 // types
-import { GenericTableDataType } from "./types"
+import { GenericTableDataType } from "./types";
 
 export function Table<TData extends GenericTableDataType>({
   ...props
@@ -21,5 +21,5 @@ export function Table<TData extends GenericTableDataType>({
       }
       {...props}
     />
-  )
+  );
 }

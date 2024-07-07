@@ -1,11 +1,11 @@
-import { ColumnFilterItem } from "antd/es/table/interface"
+import { ColumnFilterItem } from "antd/es/table/interface";
 
 export const productNameFilter: ColumnFilterItem[] = [
   {
     text: "Gerber Organic 2nd Foods",
     value: "Gerber Organic",
   },
-]
+];
 
 export const priceFilter: ColumnFilterItem[] = [
   {
@@ -16,7 +16,7 @@ export const priceFilter: ColumnFilterItem[] = [
     text: "1234",
     value: 1234,
   },
-]
+];
 
 export const ratingFilter: ColumnFilterItem[] = [
   {
@@ -27,7 +27,7 @@ export const ratingFilter: ColumnFilterItem[] = [
     text: "4.6",
     value: 4.6,
   },
-]
+];
 
 export const brandFilter: ColumnFilterItem[] = [
   {
@@ -38,7 +38,7 @@ export const brandFilter: ColumnFilterItem[] = [
     text: "Serinity",
     value: "Serinity",
   },
-]
+];
 
 export const availabilityFilter: ColumnFilterItem[] = [
   {
@@ -49,4 +49,4 @@ export const availabilityFilter: ColumnFilterItem[] = [
     text: "No",
     value: false,
   },
-]
+];

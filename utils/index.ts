@@ -1,2 +1,2 @@
-export * from "./getNavItems"
-export * from "./setKeyToList"
+export * from "./getNavItems";
+export * from "./setKeyToList";

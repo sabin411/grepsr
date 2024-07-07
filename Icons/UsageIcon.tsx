@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 export const UsageIcon = () => (
   <svg
@@ -22,4 +22,4 @@ export const UsageIcon = () => (
       fill="currentColor"
     />
   </svg>
-)
+);

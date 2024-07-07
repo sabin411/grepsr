@@ -1,15 +1,15 @@
-import React from "react"
+import React from "react";
 
 // assets
-import { DashboardIcon, LayoutIcon, UsageIcon } from "@/Icons"
+import { DashboardIcon, LayoutIcon, UsageIcon } from "@/Icons";
 
 // types
 export type NavMenuItem = {
-  key: string
-  icon: React.FunctionComponentElement<{}>
-  label: string
-  link: string
-}
+  key: string;
+  icon: React.FunctionComponentElement<object>;
+  label: string;
+  link: string;
+};
 
 export const navMenuItem: NavMenuItem[] = [
   {
@@ -30,4 +30,4 @@ export const navMenuItem: NavMenuItem[] = [
     label: "Credit usage",
     link: "/credit-usage",
   },
-]
+];

@@ -1,2 +1,2 @@
-export * from "./colorScheme"
-export * from "./themeConfig"
+export * from "./colorScheme";
+export * from "./themeConfig";

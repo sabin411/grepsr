@@ -1,2 +1,2 @@
-export * from "./CreditStats"
-export * from "./TitleWithAlphaIcon"
+export * from "./CreditStats";
+export * from "./TitleWithAlphaIcon";

@@ -1,19 +1,17 @@
-"use client"
+"use client";
 
 // packages
-import { ThemeProvider } from "antd-style"
-import { ConfigProvider, theme } from "antd"
-import { ThemeContext } from "styled-components"
+import { ConfigProvider } from "antd";
+import { ThemeProvider } from "antd-style";
+import { ThemeContext } from "styled-components";
 
 // context
-import StyledComponentsRegistry from "./registryProvider"
+import StyledComponentsRegistry from "./registryProvider";
 
 // constants
-import { antThemeConfig, customTheme } from "@/theme"
+import { antThemeConfig, customTheme } from "@/theme";
 
 const UIThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const { token } = theme.useToken()
-
   return (
     <ConfigProvider>
       <ThemeProvider
@@ -24,7 +22,7 @@ const UIThemeProvider = ({ children }: { children: React.ReactNode }) => {
         <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
       </ThemeProvider>
     </ConfigProvider>
-  )
-}
+  );
+};
 
-export default UIThemeProvider
+export default UIThemeProvider;

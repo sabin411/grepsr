@@ -1,4 +1,4 @@
 export type GenericTableDataType = {
-  id: string | number
-  key: string | number
-}
+  id: string | number;
+  key: string | number;
+};

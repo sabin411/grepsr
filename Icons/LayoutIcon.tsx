@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 export const LayoutIcon = () => (
   <svg
@@ -28,4 +28,4 @@ export const LayoutIcon = () => (
       strokeLinejoin="round"
     />
   </svg>
-)
+);

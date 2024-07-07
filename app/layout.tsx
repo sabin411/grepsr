@@ -1,18 +1,18 @@
-import type { Metadata } from "next"
-import { Manrope } from "next/font/google"
-import AntdStyledComponentsRegistry from "@/components/AntdStyledComponentsRegistry"
+import type { Metadata } from "next";
+import { Manrope } from "next/font/google";
+import AntdStyledComponentsRegistry from "@/components/AntdStyledComponentsRegistry";
 
 // components
-import { MainLayout } from "@/components"
+import { MainLayout } from "@/components";
 
 // styles
-import "../styles/globals.css"
+import "../styles/globals.css";
 
 // contexts
-import UIThemeProvider from "@/context/themeProvider"
-import TanstackProvider from "@/context/tanstackContext"
+import UIThemeProvider from "@/context/themeProvider";
+import TanstackProvider from "@/context/tanstackContext";
 
-const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" })
+const manrope = Manrope({ subsets: ["latin"], variable: "--font-manrope" });
 
 // Meta data
 export const metadata: Metadata = {
@@ -21,12 +21,12 @@ export const metadata: Metadata = {
     template: "%s | Grepsr",
   },
   description: "Built by sabin",
-}
+};
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
   return (
     <UIThemeProvider>
@@ -40,5 +40,5 @@ export default function RootLayout({
         </body>
       </html>
     </UIThemeProvider>
-  )
+  );
 }

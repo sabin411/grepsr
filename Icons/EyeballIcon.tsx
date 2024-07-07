@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 const EyeballIcon = () => (
   <svg
@@ -17,6 +17,6 @@ const EyeballIcon = () => (
       fill="currentColor"
     />
   </svg>
-)
+);
 
-export default EyeballIcon
+export default EyeballIcon;
