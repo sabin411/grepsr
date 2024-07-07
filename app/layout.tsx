@@ -3,7 +3,10 @@ import type { Metadata } from "next"
 import { Manrope } from "next/font/google"
 import AntdStyledComponentsRegistry from "@/components/AntdStyledComponentsRegistry"
 
+// components
 import { MainLayout } from "@/components"
+
+// contexts
 import UIThemeProvider from "@/context/themeProvider"
 import TanstackProvider from "@/context/tanstackContext"
 

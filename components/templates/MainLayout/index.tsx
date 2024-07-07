@@ -4,13 +4,18 @@ import Link from "next/link"
 import Image from "next/image"
 import React, { useState } from "react"
 import { usePathname } from "next/navigation"
+
+// packages
 import { Avatar, Button, Flex, Layout, Menu, Typography } from "antd"
 
+// components
 import { LayoutWrapper } from "./styles"
 import { CreditStats } from "../../atoms"
 
+// utils
 import { getNavItems } from "@/utils/getNavItems"
 
+// constants
 import { navMenuItem } from "@/constants/navMenuItem"
 
 const { Header, Content, Sider } = Layout

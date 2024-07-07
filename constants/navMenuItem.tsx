@@ -1,8 +1,10 @@
 import React from "react"
 
-import { DashboardIcon, LayoutIcon, UsageIcon } from "@/Icons"
-
+// types
 import { NavMenuItem } from "@/types"
+
+// assets
+import { DashboardIcon, LayoutIcon, UsageIcon } from "@/Icons"
 
 export const navMenuItem: NavMenuItem[] = [
   {

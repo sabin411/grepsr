@@ -1,13 +1,16 @@
 "use client"
 
 import React from "react"
+
+// packages
 import { TableProps } from "antd"
+
+// components
 import { StyledTable } from "./styles"
 
-type GenericTableDataType = {
-  id: string | number
-  key: string | number
-}
+// types
+import { GenericTableDataType } from "./types"
+
 export function Table<TData extends GenericTableDataType>({
   ...props
 }: TableProps<TData>) {

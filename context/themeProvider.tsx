@@ -1,8 +1,11 @@
 "use client"
+
+// packages
 import { ThemeProvider } from "antd-style"
 import { ConfigProvider, theme } from "antd"
 import { ThemeContext } from "styled-components"
 
+// context
 import StyledComponentsRegistry from "./registryProvider"
 
 // constants

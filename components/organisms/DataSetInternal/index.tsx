@@ -2,18 +2,31 @@
 
 import React from "react"
 import Image from "next/image"
+
+// packages
 import { ColumnsType } from "antd/es/table"
+import { useQuery } from "@tanstack/react-query"
 import { Button, Flex, Switch, Typography } from "antd"
 
+// components
 import { StyledDataSetPage } from "./styles"
 import { Table } from "@/components/molecules"
 import { TitleWithAlphaIcon } from "@/components/atoms"
 
+// assets
 import FilterIcon from "@/Icons/FilterIcon"
 import EyeballIcon from "@/Icons/EyeballIcon"
 
+// services
+import { getDataset } from "@/services/dataset.services"
+
+// utils
+import { setKeyToList } from "@/utils/setKeyToList"
+
+// types
 import { ProductPriceDataType } from "@/types"
 
+// constants
 import {
   brandFilter,
   datasetMock,
@@ -22,9 +35,6 @@ import {
   productNameFilter,
   availabilityFilter,
 } from "@/constants"
-import { useQuery } from "@tanstack/react-query"
-import { getDataset } from "@/services/dataset.services"
-import { setKeyToList } from "@/utils/setKeyToList"
 
 export const DataSetInternal = () => {
   const { Title } = Typography
