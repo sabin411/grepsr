@@ -2,7 +2,9 @@ import "../styles/globals.css"
 import type { Metadata } from "next"
 import { Manrope } from "next/font/google"
 import AntdStyledComponentsRegistry from "@/components/AntdStyledComponentsRegistry"
-import ThemeProvider from "@/context/themeProvider"
+
+import { MainLayout } from "@/components/MainLayout"
+import UIThemeProvider from "@/context/themeProvider"
 
 const manrope = Manrope({ subsets: ["latin"] })
 
@@ -17,14 +19,14 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <ThemeProvider>
+    <UIThemeProvider>
       <html lang="en">
         <body className={manrope.className}>
           <AntdStyledComponentsRegistry>
-            {children}
+            <MainLayout>{children}</MainLayout>
           </AntdStyledComponentsRegistry>
         </body>
       </html>
-    </ThemeProvider>
+    </UIThemeProvider>
   )
 }
