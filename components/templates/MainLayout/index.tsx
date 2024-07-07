@@ -5,7 +5,7 @@ import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 
 // packages
-import { Button, Flex, Layout, Menu, Typography } from "antd";
+import { Flex, Layout, Menu, Typography } from "antd";
 
 // components
 import { Header } from "./common/Header";
@@ -16,6 +16,7 @@ import { getNavItems } from "@/utils/getNavItems";
 
 // constants
 import { navMenuItem } from "@/constants/navMenuItem";
+import { CustomButton } from "@/components/atoms/CustomButton";
 
 const { Content, Sider } = Layout;
 
@@ -29,7 +30,7 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
     pathname === "/"
       ? "/"
       : navMenuItem.find(
-          (item) => item.key !== "/" && pathname.includes(item.key)
+          (item) => item.key !== "/" && pathname.includes(item.key),
         )?.key || "/";
 
   return (
@@ -59,7 +60,7 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
 
           <div className="find-help-box">
             <Title level={5}>Need any help?</Title>
-            <Button>Contact Support</Button>
+            <CustomButton type="secondary">Contact Support</CustomButton>
           </div>
         </Sider>
 
