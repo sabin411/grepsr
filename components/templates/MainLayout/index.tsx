@@ -1,4 +1,5 @@
 "use client"
+
 import Link from "next/link"
 import Image from "next/image"
 import React, { useState } from "react"
@@ -6,7 +7,7 @@ import { usePathname } from "next/navigation"
 import { Avatar, Button, Flex, Layout, Menu, Typography } from "antd"
 
 import { LayoutWrapper } from "./styles"
-import { CreditStats } from "../CreditStats"
+import { CreditStats } from "../../atoms"
 
 import { getNavItems } from "@/utils/getNavItems"
 

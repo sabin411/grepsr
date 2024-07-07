@@ -3,7 +3,7 @@ import type { Metadata } from "next"
 import { Manrope } from "next/font/google"
 import AntdStyledComponentsRegistry from "@/components/AntdStyledComponentsRegistry"
 
-import { MainLayout } from "@/components/MainLayout"
+import { MainLayout } from "@/components"
 import UIThemeProvider from "@/context/themeProvider"
 
 const manrope = Manrope({ subsets: ["latin"] })
