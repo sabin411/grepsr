@@ -1,30 +1,30 @@
-"use client"
+"use client";
 
-import React from "react"
-import Image from "next/image"
+import React from "react";
+import Image from "next/image";
 
 // packages
-import { ColumnsType } from "antd/es/table"
-import { useQuery } from "@tanstack/react-query"
-import { Button, Flex, Switch, Typography } from "antd"
+import { ColumnsType } from "antd/es/table";
+import { useQuery } from "@tanstack/react-query";
+import { Button, Flex, Switch, Typography } from "antd";
 
 // components
-import { StyledDataSetPage } from "./styles"
-import { Table } from "@/components/molecules"
-import { TitleWithAlphaIcon } from "@/components/atoms"
+import { StyledDataSetPage } from "./styles";
+import { Table } from "@/components/molecules";
+import { TitleWithAlphaIcon } from "@/components/atoms";
 
 // assets
-import FilterIcon from "@/Icons/FilterIcon"
-import EyeballIcon from "@/Icons/EyeballIcon"
+import FilterIcon from "@/Icons/FilterIcon";
+import EyeballIcon from "@/Icons/EyeballIcon";
 
 // services
-import { getDataset } from "@/services/dataset.services"
+import { getDataset } from "@/services/dataset.services";
 
 // utils
-import { setKeyToList } from "@/utils/setKeyToList"
+import { setKeyToList } from "@/utils/setKeyToList";
 
 // types
-import { ProductPriceDataType } from "./types"
+import { ProductPriceDataType } from "./types";
 
 // constants
 import {
@@ -33,10 +33,12 @@ import {
   ratingFilter,
   productNameFilter,
   availabilityFilter,
-} from "@/constants"
+} from "@/constants";
+import { useParams } from "next/navigation";
 
 export const DataSetInternal = () => {
-  const { Title } = Typography
+  const { Title } = Typography;
+  const params = useParams<{ key: string }>();
 
   const column: ColumnsType<ProductPriceDataType> = [
     {
@@ -93,13 +95,13 @@ export const DataSetInternal = () => {
       render: (val) => (val ? "Yes" : "No"),
       width: 250,
     },
-  ]
+  ];
 
   const { data: datasetResponse, isLoading } = useQuery({
-    queryKey: ["dataset"],
-    queryFn: () => getDataset("amazon"),
+    queryKey: ["dataset", params.key],
+    queryFn: () => getDataset(params.key),
     select: (resp) => setKeyToList(resp.data),
-  })
+  });
 
   return (
     <StyledDataSetPage>
@@ -158,5 +160,5 @@ export const DataSetInternal = () => {
         }}
       />
     </StyledDataSetPage>
-  )
-}
+  );
+};

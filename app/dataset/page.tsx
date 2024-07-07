@@ -1,9 +1,11 @@
-import React from "react"
+import Link from "next/link"
 
-import { DataSetInternal } from "@/components/organisms"
-
-const Dataset = () => {
-  return <DataSetInternal />
+export default function Dataset() {
+  return (
+    <div>
+      <span>home page</span>
+      <br />
+      <Link href={"/dataset/amazon"}> Amazon product price </Link>
+    </div>
+  )
 }
-
-export default Dataset
