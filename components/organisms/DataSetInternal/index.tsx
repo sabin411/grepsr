@@ -36,9 +36,8 @@ import {
 } from "@/constants";
 import { useParams } from "next/navigation";
 
-export const DataSetInternal = () => {
+export const DataSetInternal = ({ productKey }: { productKey: string }) => {
   const { Title } = Typography;
-  const params = useParams<{ key: string }>();
 
   const column: ColumnsType<ProductPriceDataType> = [
     {
@@ -98,8 +97,8 @@ export const DataSetInternal = () => {
   ];
 
   const { data: datasetResponse, isLoading } = useQuery({
-    queryKey: ["dataset", params.key],
-    queryFn: () => getDataset(params.key),
+    queryKey: ["dataset", productKey],
+    queryFn: () => getDataset(productKey),
     select: (resp) => setKeyToList(resp.data),
   });
 

@@ -9,8 +9,8 @@ import { usePathname } from "next/navigation";
 import { Avatar, Button, Flex, Layout, Menu, Typography } from "antd";
 
 // components
+import { Header } from "./common/Header";
 import { LayoutWrapper } from "./styles";
-import { CreditStats } from "../../atoms";
 
 // utils
 import { getNavItems } from "@/utils/getNavItems";
@@ -18,7 +18,7 @@ import { getNavItems } from "@/utils/getNavItems";
 // constants
 import { navMenuItem } from "@/constants/navMenuItem";
 
-const { Header, Content, Sider } = Layout;
+const { Content, Sider } = Layout;
 
 export const MainLayout = ({ children }: { children: React.ReactNode }) => {
   const [collapsed, setCollapsed] = useState(false);
@@ -63,36 +63,7 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
         </Sider>
 
         <Layout className="content-layout">
-          <Header>
-            <Flex align="center" gap={8} className="page-title">
-              <Button className="back-btn" type="text">
-                <Image
-                  src="/assets/icons/backArrow.svg"
-                  height={24}
-                  width={24}
-                  alt="arrow"
-                />
-              </Button>
-              <Title level={4}>Amazon product price</Title>
-              <Image
-                src="/assets/icons/info.svg"
-                height={24}
-                width={24}
-                alt="arrow"
-              />
-            </Flex>
-
-            <Flex align="center" gap={16}>
-              <CreditStats />
-              <Image
-                src={"/assets/icons/bell.svg"}
-                width={24}
-                height={24}
-                alt="bell"
-              />
-              <Avatar src={"/assets/img/dp.png"} />
-            </Flex>
-          </Header>
+          <Header />
 
           <Content>
             <div className="content-section">{children}</div>
