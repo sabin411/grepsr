@@ -10,13 +10,13 @@ import { Flex, Layout, Menu, Typography } from "antd";
 // components
 import { Header } from "./common/Header";
 import { LayoutWrapper } from "./styles";
+import { CustomButton } from "@/components";
 
 // utils
 import { getNavItems } from "@/utils/getNavItems";
 
 // constants
 import { navMenuItem } from "@/constants/navMenuItem";
-import { CustomButton } from "@/components/atoms/CustomButton";
 
 const { Content, Sider } = Layout;
 
