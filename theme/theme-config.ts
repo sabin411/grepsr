@@ -10,6 +10,7 @@ export const antThemeConfig: ThemeConfig = {
   token: {
     ...colorScheme,
     ...themeConfig,
+    borderRadius: 6,
   },
   components: {
     Button: {
@@ -21,8 +22,7 @@ export const antThemeConfig: ThemeConfig = {
 
     Typography: {
       fontFamilyCode: "Roboto",
-      fontSizeHeading1: 20,
-      fontSizeHeading3: 14,
+      fontSizeHeading5: 12,
       fontSize: 14,
       fontWeightStrong: 500,
       titleMarginBottom: 0,
@@ -38,6 +38,8 @@ export const antThemeConfig: ThemeConfig = {
 }
 
 export const customTheme = {
+  "gray-1": "#f4f5fc",
+  "bg-main": "#F4F5FC",
   fs: {
     xsm: "12px",
     sm: "14px",
