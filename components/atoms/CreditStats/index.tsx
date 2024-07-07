@@ -1,16 +1,17 @@
-"use client"
+"use client";
 
-import React from "react"
-import Image from "next/image"
+import React from "react";
+import Image from "next/image";
 
 // packages
-import { Flex, Typography } from "antd"
+import { Flex, Typography } from "antd";
 
 // components
-import { StyledCreditStats } from "./styles"
+import { StyledCreditStats } from "./styles";
 
 export const CreditStats = () => {
-  const { Title } = Typography
+  const { Title } = Typography;
+
   return (
     <StyledCreditStats align="center" gap={5}>
       <Image
@@ -30,5 +31,5 @@ export const CreditStats = () => {
         />
       </Flex>
     </StyledCreditStats>
-  )
-}
+  );
+};
