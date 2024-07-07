@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const LayoutWrapper = styled.div`
   .ant-layout.main-layout {
     min-height: 100vh;
+    min-width: 800px;
+    overflow-x: auto;
     .ant-layout-sider {
       border-right: 1px solid ${(p) => p.theme.colorBorder};
       .ant-layout-sider-children {
@@ -67,17 +69,20 @@ export const LayoutWrapper = styled.div`
       .ant-layout-header {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
         justify-content: space-between;
-        height: 60px;
-        padding: 0px 32px;
+        height: auto;
+        padding: 13.5px 32px;
         border-bottom: 1px solid ${({ theme }) => theme.colorBorder};
         background-color: ${({ theme }) => theme.colorBgContainer};
         .page-title .back-btn {
           padding: 0;
         }
 
-        .ant-typography {
+        .ant-typography.title {
           color: ${({ theme }) => theme["blue-10"]};
+          text-transform: capitalize;
         }
 
         .info-button,

@@ -81,6 +81,7 @@ export const DataSetInternal = ({ productKey }: { productKey: string }) => {
       </Flex>
 
       <Table
+        className="product-table"
         columns={datasetColumn}
         loading={isLoading}
         pagination={false}

@@ -9,7 +9,10 @@ import { Flex, Typography } from "antd";
 // components
 import { StyledCreditStats } from "./styles";
 
-export const CreditStats = () => {
+// types
+import { CreditStatsProps } from "./types";
+
+export const CreditStats = ({ count }: CreditStatsProps) => {
   const { Title } = Typography;
 
   return (
@@ -22,7 +25,7 @@ export const CreditStats = () => {
       />
 
       <Flex align="center" gap={5}>
-        <Title level={5}>Credit usage: 1018 /</Title>
+        <Title level={5}>Credit usage: {count} /</Title>
         <Image
           src="/assets/icons/infinity.svg"
           height={16}

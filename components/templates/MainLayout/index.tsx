@@ -1,7 +1,7 @@
 "use client";
 
+import React from "react";
 import Link from "next/link";
-import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 
 // packages
@@ -21,8 +21,6 @@ import { CustomButton } from "@/components/atoms/CustomButton";
 const { Content, Sider } = Layout;
 
 export const MainLayout = ({ children }: { children: React.ReactNode }) => {
-  const [collapsed, setCollapsed] = useState(false);
-
   const { Title } = Typography;
   const pathname = usePathname();
 
@@ -36,15 +34,7 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <LayoutWrapper>
       <Layout className="main-layout">
-        <Sider
-          breakpoint="lg"
-          collapsedWidth="0"
-          width={212}
-          // collapsible
-          trigger={null}
-          collapsed={collapsed}
-          onCollapse={(value) => setCollapsed(value)}
-        >
+        <Sider collapsedWidth="0" width={212} collapsible={false}>
           <Flex className="grepsr-logo" align="center">
             <Link href={"/"} className="logo-link">
               Grepsr
