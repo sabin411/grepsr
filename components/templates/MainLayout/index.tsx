@@ -1,37 +1,37 @@
-"use client"
+"use client";
 
-import Link from "next/link"
-import Image from "next/image"
-import React, { useState } from "react"
-import { usePathname } from "next/navigation"
+import Link from "next/link";
+import Image from "next/image";
+import React, { useState } from "react";
+import { usePathname } from "next/navigation";
 
 // packages
-import { Avatar, Button, Flex, Layout, Menu, Typography } from "antd"
+import { Avatar, Button, Flex, Layout, Menu, Typography } from "antd";
 
 // components
-import { LayoutWrapper } from "./styles"
-import { CreditStats } from "../../atoms"
+import { LayoutWrapper } from "./styles";
+import { CreditStats } from "../../atoms";
 
 // utils
-import { getNavItems } from "@/utils/getNavItems"
+import { getNavItems } from "@/utils/getNavItems";
 
 // constants
-import { navMenuItem } from "@/constants/navMenuItem"
+import { navMenuItem } from "@/constants/navMenuItem";
 
-const { Header, Content, Sider } = Layout
+const { Header, Content, Sider } = Layout;
 
 export const MainLayout = ({ children }: { children: React.ReactNode }) => {
-  const [collapsed, setCollapsed] = useState(false)
+  const [collapsed, setCollapsed] = useState(false);
 
-  const { Title } = Typography
-  const pathname = usePathname()
+  const { Title } = Typography;
+  const pathname = usePathname();
 
   const selectedKey =
     pathname === "/"
       ? "/"
       : navMenuItem.find(
           (item) => item.key !== "/" && pathname.includes(item.key)
-        )?.key || "/"
+        )?.key || "/";
 
   return (
     <LayoutWrapper>
@@ -100,5 +100,5 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
         </Layout>
       </Layout>
     </LayoutWrapper>
-  )
-}
+  );
+};
