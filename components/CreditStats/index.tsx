@@ -1,6 +1,7 @@
-import { Flex, Space, Typography } from "antd"
-import Image from "next/image"
 import React from "react"
+import Image from "next/image"
+import { Flex, Typography } from "antd"
+
 import { StyledCreditStats } from "./styles"
 
 export const CreditStats = () => {

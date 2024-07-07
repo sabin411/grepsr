@@ -1,5 +1,5 @@
 import { ThemeConfig } from "antd"
-import { colorScheme } from "./color-scheme"
+import { colorScheme } from "./colorScheme"
 
 export const themeConfig: ThemeConfig["token"] = {
   borderRadius: 4,

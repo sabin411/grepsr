@@ -1,9 +1,12 @@
 "use client"
-import { antThemeConfig, customTheme } from "@/theme/theme-config"
+import { ThemeProvider } from "antd-style"
 import { ConfigProvider, theme } from "antd"
 import { ThemeContext } from "styled-components"
+
 import StyledComponentsRegistry from "./registryProvider"
-import { ThemeProvider } from "antd-style"
+
+// constants
+import { antThemeConfig, customTheme } from "@/theme"
 
 const UIThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const { token } = theme.useToken()

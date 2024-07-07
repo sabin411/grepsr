@@ -1,4 +1,4 @@
-import { customTheme } from "./theme/theme-config"
+import { customTheme } from "./theme"
 import { Theme as AntdStyleTheme } from "antd-style"
 
 type ThemeType = typeof customTheme

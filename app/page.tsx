@@ -1,9 +1,11 @@
-import { Button } from "antd"
+import { Button, Flex } from "antd"
 
 export default function Home() {
   return (
-    <main>
-      <Button type="primary">Operations</Button>
-    </main>
+    <div>
+      <Flex>
+        <Button type="primary">Operations</Button>
+      </Flex>
+    </div>
   )
 }
