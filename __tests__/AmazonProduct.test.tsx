@@ -23,6 +23,7 @@ describe("Home page", () => {
 
     const productItem = screen.getAllByRole("row");
 
+    // Here we are checking for extra 'row' by adding 1 because, antd table always has one extra tr i.e table row
     expect(productItem.length).toBe(amazonProducts.length + 1);
   });
 });
