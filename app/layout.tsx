@@ -5,6 +5,7 @@ import AntdStyledComponentsRegistry from "@/components/AntdStyledComponentsRegis
 
 import { MainLayout } from "@/components"
 import UIThemeProvider from "@/context/themeProvider"
+import TanstackProvider from "@/context/tanstackContext"
 
 const manrope = Manrope({ subsets: ["latin"] })
 
@@ -22,9 +23,11 @@ export default function RootLayout({
     <UIThemeProvider>
       <html lang="en">
         <body className={manrope.className}>
-          <AntdStyledComponentsRegistry>
-            <MainLayout>{children}</MainLayout>
-          </AntdStyledComponentsRegistry>
+          <TanstackProvider>
+            <AntdStyledComponentsRegistry>
+              <MainLayout>{children}</MainLayout>
+            </AntdStyledComponentsRegistry>
+          </TanstackProvider>
         </body>
       </html>
     </UIThemeProvider>
