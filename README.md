@@ -22,7 +22,7 @@ npm run dev
 yarn dev
 ```
 
-Very Important Note: You must create a .env.local file and add a link/base URL to the server to fetch data. Visit MockAPI to create mock data. The data structure should be as follows:
+Very Important Note: You must create a .env.local file and add a link/base URL to the server to fetch data. Visit [`MockAPI`](https:/www.mockapi.io/) to create mock data. The data structure should be as follows:
 
 ```ts
 export interface DatasetData {
