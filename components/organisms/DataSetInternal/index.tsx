@@ -62,6 +62,7 @@ export const DataSetInternal = ({ productKey }: { productKey: string }) => {
       onFilter: (value, record) => record.price === value,
       filterIcon: <FilterIcon />,
       width: 200,
+      render: (val) => `$${val}`,
     },
     {
       title: <TitleWithAlphaIcon>Rating</TitleWithAlphaIcon>,

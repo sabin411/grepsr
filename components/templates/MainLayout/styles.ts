@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const LayoutWrapper = styled.div`
   .ant-layout.main-layout {
@@ -62,6 +62,7 @@ export const LayoutWrapper = styled.div`
       }
     }
     .content-layout {
+      position: relative;
       background: ${({ theme }) => theme["gray-1"]};
       .ant-layout-header {
         display: flex;
@@ -74,10 +75,18 @@ export const LayoutWrapper = styled.div`
         .page-title .back-btn {
           padding: 0;
         }
+
         .ant-typography {
           color: ${({ theme }) => theme["blue-10"]};
         }
+
+        .info-button,
+        .bell-button,
+        .profile-button {
+          padding: 0;
+        }
       }
+
       .ant-layout-content {
         margin: 24px 24px 0;
         .content-section {
@@ -86,4 +95,4 @@ export const LayoutWrapper = styled.div`
       }
     }
   }
-`
+`;

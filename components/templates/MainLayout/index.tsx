@@ -1,12 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import React, { useState } from "react";
 import { usePathname } from "next/navigation";
 
 // packages
-import { Avatar, Button, Flex, Layout, Menu, Typography } from "antd";
+import { Button, Flex, Layout, Menu, Typography } from "antd";
 
 // components
 import { Header } from "./common/Header";
@@ -37,9 +36,11 @@ export const MainLayout = ({ children }: { children: React.ReactNode }) => {
     <LayoutWrapper>
       <Layout className="main-layout">
         <Sider
+          breakpoint="lg"
           collapsedWidth="0"
           width={212}
-          collapsible={false}
+          // collapsible
+          trigger={null}
           collapsed={collapsed}
           onCollapse={(value) => setCollapsed(value)}
         >
