@@ -1,11 +1,10 @@
-import { Button, Flex } from "antd"
+import Link from "next/link"
 
 export default function Home() {
   return (
     <div>
-      <Flex>
-        <Button type="primary">Operations</Button>
-      </Flex>
+      home page
+      <Link href={"/dataset"}> Amazon product price </Link>
     </div>
   )
 }
