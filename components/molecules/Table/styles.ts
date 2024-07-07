@@ -10,6 +10,14 @@ export const StyledTable = styled(AntTable)`
         }
         color: ${({ theme }) => theme["blue-10"]};
       }
+
+      tr th:first-child {
+        border-end-start-radius: 6px;
+      }
+
+      tr th:last-child {
+        border-end-end-radius: 6px;
+      }
     }
 
     thead tr th,

@@ -17,7 +17,7 @@ export function Table<TData extends GenericTableDataType>({
   return (
     <StyledTable
       rowClassName={(_, index) =>
-        index % 2 === 0 ? "table-row-white" : "table-row-gray"
+        index % 2 === 0 ? "table-row-gray" : "table-row-white"
       }
       {...props}
     />
