@@ -24,12 +24,11 @@ import { getDataset } from "@/services/dataset.services"
 import { setKeyToList } from "@/utils/setKeyToList"
 
 // types
-import { ProductPriceDataType } from "@/types"
+import { ProductPriceDataType } from "./types"
 
 // constants
 import {
   brandFilter,
-  datasetMock,
   priceFilter,
   ratingFilter,
   productNameFilter,

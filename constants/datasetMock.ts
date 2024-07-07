@@ -1,35 +1,4 @@
-import { ProductPriceDataType } from "@/types"
 import { ColumnFilterItem } from "antd/es/table/interface"
-
-export const datasetMock: ProductPriceDataType[] = [
-  {
-    id: 1,
-    key: 1,
-    product_name: "Gerber Organic 2nd Foods",
-    brand: "Happy kids",
-    price: 1234,
-    rating: 3,
-    availability: true,
-  },
-  {
-    id: 2,
-    key: 2,
-    product_name: "Gerber Organic 2nd Foods",
-    brand: "Happy kids",
-    price: 1234,
-    rating: 3,
-    availability: true,
-  },
-  {
-    id: 3,
-    key: 3,
-    product_name: "Serenity Kids 6+ Months Baby Food Pouches Puree",
-    brand: "Serinity",
-    price: 100,
-    rating: 4.9,
-    availability: false,
-  },
-]
 
 export const productNameFilter: ColumnFilterItem[] = [
   {

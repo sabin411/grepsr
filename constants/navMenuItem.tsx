@@ -1,10 +1,15 @@
 import React from "react"
 
-// types
-import { NavMenuItem } from "@/types"
-
 // assets
 import { DashboardIcon, LayoutIcon, UsageIcon } from "@/Icons"
+
+// types
+export type NavMenuItem = {
+  key: string
+  icon: React.FunctionComponentElement<{}>
+  label: string
+  link: string
+}
 
 export const navMenuItem: NavMenuItem[] = [
   {

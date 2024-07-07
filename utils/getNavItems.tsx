@@ -1,7 +1,10 @@
 import Link from "next/link"
+
+// packages
 import { MenuProps } from "antd"
 
-import { NavMenuItem } from "@/types"
+// types
+import { NavMenuItem } from "@/constants"
 
 export const getNavItems = (items: NavMenuItem[]): MenuProps["items"] => {
   return items.map((item) => ({

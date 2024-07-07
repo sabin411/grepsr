@@ -1,11 +1,5 @@
-export type ProductPriceDataType = {
-  id: string | number
-  key: string | number
-  product_name: string
-  price: number
-  rating: number
-  brand: string
-  availability: boolean
+export interface ProductPriceDataType extends DatasetData {
+  key: number | string
 }
 
 export type DatasetResponse = DatasetData[]
