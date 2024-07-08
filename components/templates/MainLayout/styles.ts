@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const LayoutWrapper = styled.div`
   .ant-layout.main-layout {
     min-height: 100vh;
-    min-width: 800px;
     overflow-x: auto;
     .ant-layout-sider {
       border-right: 1px solid ${(p) => p.theme.colorBorder};
@@ -66,6 +65,7 @@ export const LayoutWrapper = styled.div`
     .content-layout {
       position: relative;
       background: ${({ theme }) => theme["gray-1"]};
+      min-width: 600px;
       .ant-layout-header {
         display: flex;
         align-items: center;
